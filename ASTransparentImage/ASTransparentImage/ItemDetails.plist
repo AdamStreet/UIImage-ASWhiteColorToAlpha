@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Original image</string>
+		<key>overlayImageName</key>
+		<string>clouds</string>
+		<key>isTranslucent</key>
+		<false/>
+		<key>putOnChessBoard</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>No overlay image
+(chessboard base)</string>
+		<key>overlayImageName</key>
+		<string></string>
+		<key>isTranslucent</key>
+		<false/>
+		<key>putOnChessBoard</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>White-to-alpha image
+on chessboard</string>
+		<key>overlayImageName</key>
+		<string>clouds</string>
+		<key>isTranslucent</key>
+		<true/>
+		<key>putOnChessBoard</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>White-to-alpha image
+on white background</string>
+		<key>overlayImageName</key>
+		<string>clouds</string>
+		<key>isTranslucent</key>
+		<true/>
+		<key>putOnChessBoard</key>
+		<false/>
+	</dict>
+</array>
+</plist>
