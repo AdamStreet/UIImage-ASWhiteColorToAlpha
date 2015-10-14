@@ -20,9 +20,9 @@ We want this result:
 
 ##How it works?
 
-Import UIImage+WhiteColorToAlpha.h
+Import UIImage+ASWhiteColorToAlpha.h
 
-`#import UIImage+WhiteColorToAlpha.h`
+`#import UIImage+ASWhiteColorToAlpha.h`
 
 Use -[UIImage imageWithWhiteColorToAlpha] method call to get your translucent image
 
