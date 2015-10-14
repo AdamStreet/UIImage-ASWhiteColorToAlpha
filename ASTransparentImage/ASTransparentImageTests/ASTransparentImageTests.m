@@ -8,7 +8,7 @@
 
 #import <XCTest/XCTest.h>
 
-#import "UIImage+WhiteToTransparent.h"
+#import "UIImage+ASWhiteColorToAlpha.h"
 
 @interface ASTransparentImageTests : XCTestCase
 
@@ -35,7 +35,7 @@
 	
 	// Get rendered image
 	[self measureBlock:^{
-		UIImage *renderedImage = [image imageWithWhiteToAlpha];
+		UIImage *renderedImage = [image imageWithWhiteColorToAlpha];
 		
 		XCTAssertNotNil(renderedImage, @"cannot render image");
 		XCTAssertTrue(CGSizeEqualToSize([image size], [renderedImage size]), @"Invalid size of rendered image");

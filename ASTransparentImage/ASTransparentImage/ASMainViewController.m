@@ -8,7 +8,7 @@
 
 #import "ASMainViewController.h"
 
-#import "UIImage+WhiteColorToAlpha.h"
+#import "UIImage+ASWhiteColorToAlpha.h"
 #import "ASMainCollectionCollectionViewController.h"
 #import "ASItem.h"
 #import "ASOverlaidChessBoardViewController.h"

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImage (WhiteColorToAlpha)
+@interface UIImage (ASWhiteColorToAlpha)
 
 - (UIImage *)imageWithWhiteColorToAlpha;
 

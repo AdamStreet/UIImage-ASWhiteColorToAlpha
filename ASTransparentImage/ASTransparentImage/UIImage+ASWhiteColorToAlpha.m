@@ -6,14 +6,14 @@
 //  Copyright © 2015 Adam Szabo. All rights reserved.
 //
 
-#import "UIImage+WhiteColorToAlpha.h"
+#import "UIImage+ASWhiteColorToAlpha.h"
 
 #import <ImageIO/ImageIO.h>
 #import <CoreGraphics/CoreGraphics.h>
 
 void RGBAWhiteToTransparentFromRGB(unsigned char *red, unsigned char *green, unsigned char *blue, unsigned char *alpha);
 
-@implementation UIImage (WhiteColorToAlpha)
+@implementation UIImage (ASWhiteColorToAlpha)
 
 - (UIImage *)imageWithWhiteColorToAlpha
 {

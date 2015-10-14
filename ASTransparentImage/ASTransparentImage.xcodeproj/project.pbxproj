@@ -12,7 +12,7 @@
 		66883A691BCEDDCE00AC5D8D /* ASMainCollectionCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66883A681BCEDDCE00AC5D8D /* ASMainCollectionCollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
 		66883A6D1BCEDF6C00AC5D8D /* ASMainCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66883A6C1BCEDF6C00AC5D8D /* ASMainCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		66883A711BCEE12300AC5D8D /* ASItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 66883A701BCEE12300AC5D8D /* ASItem.m */; settings = {ASSET_TAGS = (); }; };
-		66883A721BCEED8D00AC5D8D /* UIImage+WhiteColorToAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CF6D21BCD791900DC7A2D /* UIImage+WhiteColorToAlpha.m */; settings = {ASSET_TAGS = (); }; };
+		66883A721BCEED8D00AC5D8D /* UIImage+ASWhiteColorToAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CF6D21BCD791900DC7A2D /* UIImage+ASWhiteColorToAlpha.m */; settings = {ASSET_TAGS = (); }; };
 		66883A731BCEEE3600AC5D8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 668CF6B41BCD763600DC7A2D /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
 		66883A761BCEF52400AC5D8D /* ItemDetails.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66883A751BCEF52400AC5D8D /* ItemDetails.plist */; settings = {ASSET_TAGS = (); }; };
 		66883A7A1BCEF67C00AC5D8D /* ASItemPlistConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 66883A791BCEF67C00AC5D8D /* ASItemPlistConverter.m */; settings = {ASSET_TAGS = (); }; };
@@ -23,7 +23,7 @@
 		668CF6B81BCD763600DC7A2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 668CF6B61BCD763600DC7A2D /* LaunchScreen.storyboard */; };
 		668CF6C31BCD763600DC7A2D /* ASTransparentImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CF6C21BCD763600DC7A2D /* ASTransparentImageTests.m */; };
 		668CF6CF1BCD780800DC7A2D /* ASBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CF6CE1BCD780800DC7A2D /* ASBaseViewController.m */; settings = {ASSET_TAGS = (); }; };
-		668CF6D31BCD791900DC7A2D /* UIImage+WhiteColorToAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CF6D21BCD791900DC7A2D /* UIImage+WhiteColorToAlpha.m */; settings = {ASSET_TAGS = (); }; };
+		668CF6D31BCD791900DC7A2D /* UIImage+ASWhiteColorToAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CF6D21BCD791900DC7A2D /* UIImage+ASWhiteColorToAlpha.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,8 +64,8 @@
 		668CF6C41BCD763600DC7A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		668CF6CD1BCD780800DC7A2D /* ASBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASBaseViewController.h; sourceTree = "<group>"; };
 		668CF6CE1BCD780800DC7A2D /* ASBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBaseViewController.m; sourceTree = "<group>"; };
-		668CF6D11BCD791900DC7A2D /* UIImage+WhiteColorToAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WhiteColorToAlpha.h"; sourceTree = "<group>"; };
-		668CF6D21BCD791900DC7A2D /* UIImage+WhiteColorToAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WhiteColorToAlpha.m"; sourceTree = "<group>"; };
+		668CF6D11BCD791900DC7A2D /* UIImage+ASWhiteColorToAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ASWhiteColorToAlpha.h"; sourceTree = "<group>"; };
+		668CF6D21BCD791900DC7A2D /* UIImage+ASWhiteColorToAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ASWhiteColorToAlpha.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,8 +138,8 @@
 		66883A7B1BCEFC4C00AC5D8D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				668CF6D11BCD791900DC7A2D /* UIImage+WhiteColorToAlpha.h */,
-				668CF6D21BCD791900DC7A2D /* UIImage+WhiteColorToAlpha.m */,
+				668CF6D11BCD791900DC7A2D /* UIImage+ASWhiteColorToAlpha.h */,
+				668CF6D21BCD791900DC7A2D /* UIImage+ASWhiteColorToAlpha.m */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -317,7 +317,7 @@
 				66883A711BCEE12300AC5D8D /* ASItem.m in Sources */,
 				66883A621BCED84F00AC5D8D /* ASChessBoardViewController.m in Sources */,
 				66883A7A1BCEF67C00AC5D8D /* ASItemPlistConverter.m in Sources */,
-				668CF6D31BCD791900DC7A2D /* UIImage+WhiteColorToAlpha.m in Sources */,
+				668CF6D31BCD791900DC7A2D /* UIImage+ASWhiteColorToAlpha.m in Sources */,
 				66883A691BCEDDCE00AC5D8D /* ASMainCollectionCollectionViewController.m in Sources */,
 				668CF6AA1BCD763600DC7A2D /* main.m in Sources */,
 				668CF6CF1BCD780800DC7A2D /* ASBaseViewController.m in Sources */,
@@ -329,7 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				668CF6C31BCD763600DC7A2D /* ASTransparentImageTests.m in Sources */,
-				66883A721BCEED8D00AC5D8D /* UIImage+WhiteColorToAlpha.m in Sources */,
+				66883A721BCEED8D00AC5D8D /* UIImage+ASWhiteColorToAlpha.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
