@@ -24,9 +24,13 @@ We want this result:
 
 2. Import UIImage+ASWhiteColorToAlpha.h `#import UIImage+ASWhiteColorToAlpha.h`
 
-3. Use -[UIImage imageWithWhiteColorToAlpha] method call to get your translucent image `UIImage *myTranslicentImage = [myOriginalImage imageWithWhiteColorToAlpha];`
+3. Use -[UIImage imageWithWhiteColorToAlpha] method call to get your translucent image `UIImage *myTranslucentImage = [myOriginalImage imageWithWhiteColorToAlpha];` or -[UIImage renderImageWithWhiteColorToAlpha:] which gives back the asynchronously rendered image in a completion block. 
+```__block UIImage *myTranslicentImage = nil;
+[myOriginalImage renderImageWithWhiteColorToAlpha:^(UIImage *translucentImage){
+myTranslucentImage = translucentImage;
+// Update UI
+}];```
 
 ##Known issues
 
-* Image rendering takes a long time and no option for async rendering
 * Should be cached for reuse
