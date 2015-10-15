@@ -1,4 +1,4 @@
-# UIImage-WhiteColorToAlpha
+# UIImage-ASWhiteColorToAlpha
 
 ##When do I need it?
 
@@ -8,17 +8,19 @@ This is our original image:
 
 This is our background:
 
-![chessboard](chessboard_bg.png)
+![chessboard](Resources/chessboard_bg.png)
 
 We want this result:
 
-![white_color_to_alpha_on_chessboard](white_color_to_alpha_on_chessboard.png)
+![white_color_to_alpha_on_chessboard](Resources/white_color_to_alpha_on_chessboard.png)
 
 ... which looks like this on white backgroud:
 
-![white_color_to_alpha_on_white](white_color_to_alpha_on_white.png)
+![white_color_to_alpha_on_white](Resources/white_color_to_alpha_on_white.png)
 
 ##How it works?
+
+Copy `UIImage+ASWhiteColorToAlpha.h` and `UIImage+ASWhiteColorToAlpha.m` into your project.
 
 Import UIImage+ASWhiteColorToAlpha.h
 
