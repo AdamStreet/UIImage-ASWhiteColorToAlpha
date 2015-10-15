@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6661E1D71BCFA795006EE48B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 6661E1D51BCFA795006EE48B /* LICENSE */; settings = {ASSET_TAGS = (); }; };
+		6661E1D81BCFA795006EE48B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 6661E1D61BCFA795006EE48B /* README.md */; settings = {ASSET_TAGS = (); }; };
+		6661E1DC1BCFA824006EE48B /* UIImage+ASWhiteColorToAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 6661E1DB1BCFA824006EE48B /* UIImage+ASWhiteColorToAlpha.m */; settings = {ASSET_TAGS = (); }; };
+		6661E1DD1BCFA824006EE48B /* UIImage+ASWhiteColorToAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 6661E1DB1BCFA824006EE48B /* UIImage+ASWhiteColorToAlpha.m */; settings = {ASSET_TAGS = (); }; };
 		66883A621BCED84F00AC5D8D /* ASChessBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66883A611BCED84F00AC5D8D /* ASChessBoardViewController.m */; settings = {ASSET_TAGS = (); }; };
 		66883A661BCEDB2A00AC5D8D /* ASOverlaidChessBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66883A651BCEDB2A00AC5D8D /* ASOverlaidChessBoardViewController.m */; settings = {ASSET_TAGS = (); }; };
 		66883A691BCEDDCE00AC5D8D /* ASMainCollectionCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66883A681BCEDDCE00AC5D8D /* ASMainCollectionCollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
 		66883A6D1BCEDF6C00AC5D8D /* ASMainCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66883A6C1BCEDF6C00AC5D8D /* ASMainCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		66883A711BCEE12300AC5D8D /* ASItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 66883A701BCEE12300AC5D8D /* ASItem.m */; settings = {ASSET_TAGS = (); }; };
-		66883A721BCEED8D00AC5D8D /* UIImage+ASWhiteColorToAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CF6D21BCD791900DC7A2D /* UIImage+ASWhiteColorToAlpha.m */; settings = {ASSET_TAGS = (); }; };
 		66883A731BCEEE3600AC5D8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 668CF6B41BCD763600DC7A2D /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
 		66883A761BCEF52400AC5D8D /* ItemDetails.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66883A751BCEF52400AC5D8D /* ItemDetails.plist */; settings = {ASSET_TAGS = (); }; };
 		66883A7A1BCEF67C00AC5D8D /* ASItemPlistConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 66883A791BCEF67C00AC5D8D /* ASItemPlistConverter.m */; settings = {ASSET_TAGS = (); }; };
@@ -23,7 +26,6 @@
 		668CF6B81BCD763600DC7A2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 668CF6B61BCD763600DC7A2D /* LaunchScreen.storyboard */; };
 		668CF6C31BCD763600DC7A2D /* ASTransparentImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CF6C21BCD763600DC7A2D /* ASTransparentImageTests.m */; };
 		668CF6CF1BCD780800DC7A2D /* ASBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CF6CE1BCD780800DC7A2D /* ASBaseViewController.m */; settings = {ASSET_TAGS = (); }; };
-		668CF6D31BCD791900DC7A2D /* UIImage+ASWhiteColorToAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CF6D21BCD791900DC7A2D /* UIImage+ASWhiteColorToAlpha.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6661E1D51BCFA795006EE48B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6661E1D61BCFA795006EE48B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6661E1DA1BCFA824006EE48B /* UIImage+ASWhiteColorToAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ASWhiteColorToAlpha.h"; sourceTree = "<group>"; };
+		6661E1DB1BCFA824006EE48B /* UIImage+ASWhiteColorToAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ASWhiteColorToAlpha.m"; sourceTree = "<group>"; };
 		66883A601BCED84F00AC5D8D /* ASChessBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASChessBoardViewController.h; sourceTree = "<group>"; };
 		66883A611BCED84F00AC5D8D /* ASChessBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASChessBoardViewController.m; sourceTree = "<group>"; };
 		66883A641BCEDB2A00AC5D8D /* ASOverlaidChessBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASOverlaidChessBoardViewController.h; sourceTree = "<group>"; };
@@ -64,8 +70,6 @@
 		668CF6C41BCD763600DC7A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		668CF6CD1BCD780800DC7A2D /* ASBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASBaseViewController.h; sourceTree = "<group>"; };
 		668CF6CE1BCD780800DC7A2D /* ASBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBaseViewController.m; sourceTree = "<group>"; };
-		668CF6D11BCD791900DC7A2D /* UIImage+ASWhiteColorToAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ASWhiteColorToAlpha.h"; sourceTree = "<group>"; };
-		668CF6D21BCD791900DC7A2D /* UIImage+ASWhiteColorToAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ASWhiteColorToAlpha.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6661E1D91BCFA824006EE48B /* UIImage_ASWhiteColorToAlpha */ = {
+			isa = PBXGroup;
+			children = (
+				6661E1DA1BCFA824006EE48B /* UIImage+ASWhiteColorToAlpha.h */,
+				6661E1DB1BCFA824006EE48B /* UIImage+ASWhiteColorToAlpha.m */,
+			);
+			name = UIImage_ASWhiteColorToAlpha;
+			path = ../UIImage_ASWhiteColorToAlpha;
+			sourceTree = "<group>";
+		};
 		66883A631BCEDAD300AC5D8D /* BaseViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,21 +149,15 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
-		66883A7B1BCEFC4C00AC5D8D /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				668CF6D11BCD791900DC7A2D /* UIImage+ASWhiteColorToAlpha.h */,
-				668CF6D21BCD791900DC7A2D /* UIImage+ASWhiteColorToAlpha.m */,
-			);
-			name = Extensions;
-			sourceTree = "<group>";
-		};
 		668CF69C1BCD763600DC7A2D = {
 			isa = PBXGroup;
 			children = (
 				668CF6A71BCD763600DC7A2D /* ASTransparentImage */,
 				668CF6C11BCD763600DC7A2D /* ASTransparentImageTests */,
 				668CF6A61BCD763600DC7A2D /* Products */,
+				6661E1D51BCFA795006EE48B /* LICENSE */,
+				6661E1D61BCFA795006EE48B /* README.md */,
+				6661E1D91BCFA824006EE48B /* UIImage_ASWhiteColorToAlpha */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,7 +176,6 @@
 				66883A741BCEF4F600AC5D8D /* Resources */,
 				668CF6AB1BCD763600DC7A2D /* ASAppDelegate.h */,
 				668CF6AC1BCD763600DC7A2D /* ASAppDelegate.m */,
-				66883A7B1BCEFC4C00AC5D8D /* Extensions */,
 				66883A771BCEF66000AC5D8D /* Helpers */,
 				66883A6E1BCEE10800AC5D8D /* Models */,
 				668CF6D01BCD781000DC7A2D /* ViewControllers */,
@@ -291,6 +298,7 @@
 			files = (
 				66883A761BCEF52400AC5D8D /* ItemDetails.plist in Resources */,
 				668CF6B81BCD763600DC7A2D /* LaunchScreen.storyboard in Resources */,
+				6661E1D71BCFA795006EE48B /* LICENSE in Resources */,
 				668CF6B51BCD763600DC7A2D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,13 +319,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				668CF6B01BCD763600DC7A2D /* ASMainViewController.m in Sources */,
+				6661E1DC1BCFA824006EE48B /* UIImage+ASWhiteColorToAlpha.m in Sources */,
 				66883A6D1BCEDF6C00AC5D8D /* ASMainCollectionViewCell.m in Sources */,
 				668CF6AD1BCD763600DC7A2D /* ASAppDelegate.m in Sources */,
 				66883A661BCEDB2A00AC5D8D /* ASOverlaidChessBoardViewController.m in Sources */,
 				66883A711BCEE12300AC5D8D /* ASItem.m in Sources */,
 				66883A621BCED84F00AC5D8D /* ASChessBoardViewController.m in Sources */,
+				6661E1D81BCFA795006EE48B /* README.md in Sources */,
 				66883A7A1BCEF67C00AC5D8D /* ASItemPlistConverter.m in Sources */,
-				668CF6D31BCD791900DC7A2D /* UIImage+ASWhiteColorToAlpha.m in Sources */,
 				66883A691BCEDDCE00AC5D8D /* ASMainCollectionCollectionViewController.m in Sources */,
 				668CF6AA1BCD763600DC7A2D /* main.m in Sources */,
 				668CF6CF1BCD780800DC7A2D /* ASBaseViewController.m in Sources */,
@@ -329,7 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				668CF6C31BCD763600DC7A2D /* ASTransparentImageTests.m in Sources */,
-				66883A721BCEED8D00AC5D8D /* UIImage+ASWhiteColorToAlpha.m in Sources */,
+				6661E1DD1BCFA824006EE48B /* UIImage+ASWhiteColorToAlpha.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
