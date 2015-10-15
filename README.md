@@ -4,7 +4,7 @@
 
 This is our original image:
 
-![original](original.png)
+![original](Resources/original.png)
 
 This is our background:
 
