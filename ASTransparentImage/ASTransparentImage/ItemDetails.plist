@@ -11,6 +11,8 @@
 		<false/>
 		<key>putOnChessBoard</key>
 		<false/>
+		<key>loadAsync</key>
+		<false/>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -22,6 +24,8 @@
 		<false/>
 		<key>putOnChessBoard</key>
 		<true/>
+		<key>loadAsync</key>
+		<false/>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -33,6 +37,8 @@ on chessboard</string>
 		<true/>
 		<key>putOnChessBoard</key>
 		<true/>
+		<key>loadAsync</key>
+		<false/>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -44,6 +50,21 @@ on white background</string>
 		<true/>
 		<key>putOnChessBoard</key>
 		<false/>
+		<key>loadAsync</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>White-to-alpha image
+on white background (async rendering)</string>
+		<key>overlayImageName</key>
+		<string>clouds</string>
+		<key>isTranslucent</key>
+		<true/>
+		<key>putOnChessBoard</key>
+		<false/>
+		<key>loadAsync</key>
+		<true/>
 	</dict>
 </array>
 </plist>

@@ -14,6 +14,7 @@
 @property (nonatomic, readwrite, strong) NSString *imageName;
 @property (nonatomic, readwrite) BOOL isTranslucent;
 @property (nonatomic, readwrite) BOOL putOnChessBoard;
+@property (nonatomic, readwrite) BOOL loadAsync;
 
 @end
 
@@ -22,15 +23,17 @@
 
 #pragma mark - Class methods
 
-+ (instancetype)itemWithTitle:(NSString *)title
-					imageName:(NSString *)imageName
-				  translucent:(BOOL)isTranslucent
-			  putOnChessBoard:(BOOL)putOnChessBoard
++ (nonnull instancetype)itemWithTitle:(nonnull NSString *)title
+							imageName:(nullable NSString *)imageName
+						  translucent:(BOOL)isTranslucent
+					  putOnChessBoard:(BOOL)putOnChessBoard
+							loadAsync:(BOOL)loadAsync
 {
 	return [[self alloc] initWithTitle:title
 							 imageName:imageName
 						   translucent:isTranslucent
-					   putOnChessBoard:putOnChessBoard];
+					   putOnChessBoard:putOnChessBoard
+							 loadAsync:loadAsync];
 }
 
 #pragma mark - Initialization
@@ -39,6 +42,7 @@
 					imageName:(NSString *)imageName
 				  translucent:(BOOL)isTranslucent
 			  putOnChessBoard:(BOOL)putOnChessBoard
+					loadAsync:(BOOL)loadAsync
 {
 	self = [super init];
 	if (self) {
@@ -46,6 +50,7 @@
 		self.imageName = imageName;
 		self.isTranslucent = isTranslucent;
 		self.putOnChessBoard = putOnChessBoard;
+		self.loadAsync = loadAsync;
 	}
 	
 	return self;
@@ -57,8 +62,8 @@
 
 - (NSString *)description
 {
-	return [NSString stringWithFormat:@"Title: %@\nImageName: %@\nIsTranslucent = %@\nPutOnChessBoard = %@",
-			self.title, self.imageName, @(self.isTranslucent), @(self.putOnChessBoard)];
+	return [NSString stringWithFormat:@"Title: %@\nImageName: %@\nIsTranslucent = %@\nPutOnChessBoard = %@\nLoadAsync = %@",
+			self.title, self.imageName, @(self.isTranslucent), @(self.putOnChessBoard), @(self.loadAsync)];
 }
 
 @end

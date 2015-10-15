@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		665B43EA1BD055570020295A /* ASAsyncOverlaidChessBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 665B43E91BD055570020295A /* ASAsyncOverlaidChessBoardViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6661E1D71BCFA795006EE48B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 6661E1D51BCFA795006EE48B /* LICENSE */; settings = {ASSET_TAGS = (); }; };
 		6661E1D81BCFA795006EE48B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 6661E1D61BCFA795006EE48B /* README.md */; settings = {ASSET_TAGS = (); }; };
 		6661E1DC1BCFA824006EE48B /* UIImage+ASWhiteColorToAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 6661E1DB1BCFA824006EE48B /* UIImage+ASWhiteColorToAlpha.m */; settings = {ASSET_TAGS = (); }; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		665B43E81BD055570020295A /* ASAsyncOverlaidChessBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASAsyncOverlaidChessBoardViewController.h; sourceTree = "<group>"; };
+		665B43E91BD055570020295A /* ASAsyncOverlaidChessBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASAsyncOverlaidChessBoardViewController.m; sourceTree = "<group>"; };
 		6661E1D51BCFA795006EE48B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6661E1D61BCFA795006EE48B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6661E1DA1BCFA824006EE48B /* UIImage+ASWhiteColorToAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ASWhiteColorToAlpha.h"; sourceTree = "<group>"; };
@@ -212,6 +215,8 @@
 				668CF6AF1BCD763600DC7A2D /* ASMainViewController.m */,
 				66883A671BCEDDCE00AC5D8D /* ASMainCollectionCollectionViewController.h */,
 				66883A681BCEDDCE00AC5D8D /* ASMainCollectionCollectionViewController.m */,
+				665B43E81BD055570020295A /* ASAsyncOverlaidChessBoardViewController.h */,
+				665B43E91BD055570020295A /* ASAsyncOverlaidChessBoardViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -330,6 +335,7 @@
 				66883A7A1BCEF67C00AC5D8D /* ASItemPlistConverter.m in Sources */,
 				66883A691BCEDDCE00AC5D8D /* ASMainCollectionCollectionViewController.m in Sources */,
 				668CF6AA1BCD763600DC7A2D /* main.m in Sources */,
+				665B43EA1BD055570020295A /* ASAsyncOverlaidChessBoardViewController.m in Sources */,
 				668CF6CF1BCD780800DC7A2D /* ASBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

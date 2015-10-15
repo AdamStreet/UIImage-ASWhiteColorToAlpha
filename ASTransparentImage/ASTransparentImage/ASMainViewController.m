@@ -11,7 +11,7 @@
 #import "UIImage+ASWhiteColorToAlpha.h"
 #import "ASMainCollectionCollectionViewController.h"
 #import "ASItem.h"
-#import "ASOverlaidChessBoardViewController.h"
+#import "ASAsyncOverlaidChessBoardViewController.h"
 #import "ASItemPlistConverter.h"
 
 @interface ASMainViewController () <ASMainCollectionCollectionViewControllerDelegate>
@@ -110,22 +110,37 @@
 {
 	ASItem *selectedItem = self.items[index];
 	
-	ASOverlaidChessBoardViewController *overlaidChessBoardViewController = [[ASOverlaidChessBoardViewController alloc] initWithoutNib];
-	overlaidChessBoardViewController.title = selectedItem.title;
+	ASAsyncOverlaidChessBoardViewController *asyncOverlaidChessBoardViewController = [[ASAsyncOverlaidChessBoardViewController alloc] initWithoutNib];
+	asyncOverlaidChessBoardViewController.title = selectedItem.title;
+	asyncOverlaidChessBoardViewController.chessboardImageView.hidden = !selectedItem.putOnChessBoard;
+	
 	UIImage *image = nil;
 	if ([selectedItem.imageName length]) {
 		image = [UIImage imageNamed:selectedItem.imageName];
 		
 		if (selectedItem.isTranslucent) {
-			image = [image imageWithWhiteColorToAlpha];
+			if (selectedItem.loadAsync) {
+				__weak ASAsyncOverlaidChessBoardViewController *weakAsyncOverlaidChessBoardViewController = asyncOverlaidChessBoardViewController;
+				[asyncOverlaidChessBoardViewController.activityIndicator startAnimating];
+				asyncOverlaidChessBoardViewController.loadBlockOnViewDidAppear = ^{
+					[image renderImageWithWhiteColorToAlpha:^(UIImage * _Nonnull translucentImage) {
+						weakAsyncOverlaidChessBoardViewController.overlayImageView.image = translucentImage;
+						
+						[weakAsyncOverlaidChessBoardViewController.activityIndicator stopAnimating];
+					}];
+				};
+			} else {
+				image = [image imageWithWhiteColorToAlpha];
+				asyncOverlaidChessBoardViewController.overlayImageView.image = image;
+			}
+		} else {
+			asyncOverlaidChessBoardViewController.overlayImageView.image = image;
 		}
 	}
-	overlaidChessBoardViewController.overlayImageView.image = image;
-	overlaidChessBoardViewController.chessboardImageView.hidden = !selectedItem.putOnChessBoard;
 	
 	NSAssert(self.navigationController, @"Missing containing UINavigationController");
 	
-	[self.navigationController pushViewController:overlaidChessBoardViewController
+	[self.navigationController pushViewController:asyncOverlaidChessBoardViewController
 										 animated:YES];
 	
 }

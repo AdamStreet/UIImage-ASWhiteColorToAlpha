@@ -89,6 +89,20 @@ void RGBAWhiteToTransparentFromRGB(unsigned char *red, unsigned char *green, uns
 	return returnImage;
 }
 
+- (void)renderImageWithWhiteColorToAlpha:(nonnull void (^)(UIImage * _Nonnull translucentImage))completion
+{
+	NSParameterAssert(completion);
+	
+	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+		
+		UIImage *translucentImage = [self imageWithWhiteColorToAlpha];
+		
+		dispatch_async(dispatch_get_main_queue(), ^{
+			if (completion) completion(translucentImage);
+		});
+	});
+}
+
 @end
 
 inline void RGBAWhiteToTransparentFromRGB(unsigned char *red, unsigned char *green, unsigned char *blue, unsigned char *alpha)

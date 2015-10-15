@@ -33,5 +33,6 @@
 @interface UIImage (ASWhiteColorToAlpha)
 
 - (nonnull UIImage *)imageWithWhiteColorToAlpha;
+- (void)renderImageWithWhiteColorToAlpha:(nonnull void (^)(UIImage  * _Nonnull translucentImage))completion;
 
 @end

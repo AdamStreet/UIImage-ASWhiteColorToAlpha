@@ -10,14 +10,16 @@
 
 @interface ASItem : NSObject
 
-@property (nonatomic, readonly, copy) NSString *title;
-@property (nonatomic, readonly, strong) NSString *imageName;
+@property (nonatomic, readonly, copy) NSString * _Nonnull title;
+@property (nonatomic, readonly, strong) NSString * _Nullable imageName;
 @property (nonatomic, readonly) BOOL isTranslucent;
 @property (nonatomic, readonly) BOOL putOnChessBoard;
+@property (nonatomic, readonly) BOOL loadAsync;
 
-+ (instancetype)itemWithTitle:(NSString *)title
-					imageName:(NSString *)imageName
-				  translucent:(BOOL)isTranslucent
-			  putOnChessBoard:(BOOL)putOnChessBoard;
++ (nonnull instancetype)itemWithTitle:(nonnull NSString *)title
+							imageName:(nullable NSString *)imageName
+						  translucent:(BOOL)isTranslucent
+					  putOnChessBoard:(BOOL)putOnChessBoard
+							loadAsync:(BOOL)loadAsync;
 
 @end
