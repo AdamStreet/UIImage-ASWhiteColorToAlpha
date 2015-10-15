@@ -20,16 +20,11 @@ We want this result:
 
 ##How it works?
 
-Copy `UIImage+ASWhiteColorToAlpha.h` and `UIImage+ASWhiteColorToAlpha.m` into your project.
+1. Copy the `/UIImage_ASWhiteColorToAlpha` directory into your project.
 
-Import UIImage+ASWhiteColorToAlpha.h
+2. Import UIImage+ASWhiteColorToAlpha.h `#import UIImage+ASWhiteColorToAlpha.h`
 
-`#import UIImage+ASWhiteColorToAlpha.h`
-
-Use -[UIImage imageWithWhiteColorToAlpha] method call to get your translucent image
-
-`UIImage *myTranslicentImage = [myOriginalImage imageWithWhiteColorToAlpha];`
-
+3. Use -[UIImage imageWithWhiteColorToAlpha] method call to get your translucent image `UIImage *myTranslicentImage = [myOriginalImage imageWithWhiteColorToAlpha];`
 
 ##Known issues
 
