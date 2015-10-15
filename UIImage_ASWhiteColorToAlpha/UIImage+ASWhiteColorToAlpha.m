@@ -37,7 +37,7 @@ void RGBAWhiteToTransparentFromRGB(unsigned char *red, unsigned char *green, uns
 
 @implementation UIImage (ASWhiteColorToAlpha)
 
-- (UIImage *)imageWithWhiteColorToAlpha
+- (nonnull UIImage *)imageWithWhiteColorToAlpha
 {
 	// First get the image into your data buffer
     CGImageRef imageRef = [self CGImage];

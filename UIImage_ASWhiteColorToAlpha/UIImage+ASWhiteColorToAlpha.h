@@ -32,6 +32,6 @@
 
 @interface UIImage (ASWhiteColorToAlpha)
 
-- (UIImage *)imageWithWhiteColorToAlpha;
+- (nonnull UIImage *)imageWithWhiteColorToAlpha;
 
 @end
