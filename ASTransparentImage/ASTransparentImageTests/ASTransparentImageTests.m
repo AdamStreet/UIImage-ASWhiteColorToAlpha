@@ -42,4 +42,27 @@
 	}];
 }
 
+- (void)testAsyncImageWhiteToAlphaSize {
+	UIImage *image = [UIImage imageNamed:@"chessboard"];
+	
+	// Check test image
+	XCTAssertNotNil(image, @"cannot find test image");
+	XCTAssertFalse(CGSizeEqualToSize([image size], CGSizeZero), @"Invalid size of test image");
+	
+	XCTestExpectation *renderComplete = [self expectationWithDescription:@"Async image rendering"];
+	
+	// Get rendered image async
+	[image renderImageWithWhiteColorToAlpha:^(UIImage * _Nonnull translucentImage) {
+		XCTAssertNotNil(translucentImage, @"cannot render image");
+		XCTAssertTrue(CGSizeEqualToSize([image size], [translucentImage size]), @"Invalid size of rendered image");
+		
+		[renderComplete fulfill];
+	}];
+	
+	[self waitForExpectationsWithTimeout:10
+								 handler:^(NSError * _Nullable error) {
+									 XCTAssertNil(error);
+								 }];
+}
+
 @end
